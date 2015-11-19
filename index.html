@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="pfp">
+
+    <head>
+        <title>Personal Financial Planner</title>
+
+        <!-- script inclusions for bootstrap CSS -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />        
+
+    </head>
+
+    <body>
+
+        <header>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href = "#/income-accounts">Income Accounts&nbsp;&nbsp;&nbsp;</a>
+				</div>
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/expense-accounts">Expense Accounts&nbsp;&nbsp;&nbsp;</a>
+                </div>
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/bank-accounts">Bank Accounts&nbsp;&nbsp;&nbsp;</a>
+                </div>
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/credit-accounts">Credit Accounts&nbsp;&nbsp;&nbsp;</a>
+                </div>                
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/savings-goal">Savings Goal&nbsp;&nbsp;&nbsp;</a>
+                </div>
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/transactions">Transactions&nbsp;&nbsp;&nbsp;</a>
+                </div>  
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><i class="fa fa-home"></i>Logout</a></li>
+				</ul>
+			</div>
+			</nav>
+		</header>
+
+        <div class="container">
+
+            <div ui-view></div>
+
+		</div>
+
+        <!-- script inclusions for jqgrid -->
+        <link rel="stylesheet" type="text/css" media="screen" href="css/cobalt/jquery-ui-1.8.21.custom.css" />    
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ui.jqgrid.css" />
+        <script src="jqjs/jquery-1.11.0.min.js" type="text/javascript"></script>
+        <script src="jqjs/i18n/grid.locale-en.js" type="text/javascript"></script>
+        <script src="jqjs/jquery.jqGrid.min.js" type="text/javascript"></script>
+
+        <!--script inclusions for jqplot -->
+        <script type="text/javascript" src="jqplot/jquery.jqplot.js"></script>
+        <script type="text/javascript" src="jqplot/plugins/jqplot.pieRenderer.js"></script>
+        <link rel="stylesheet" type="text/css" href="jqplot/jquery.jqplot.css" />
+        <script type="text/javascript" src="jqplot/plugins/jqplot.barRenderer.js"></script>
+        <script type="text/javascript" src="jqplot/plugins/jqplot.categoryAxisRenderer.js"></script>
+        <script type="text/javascript" src="jqplot/plugins/jqplot.pointLabels.js"></script>
+
+        <!--script inclusions for Angular JS and Firebase -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.js"></script>
+        <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+        <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+        <!-- script inclusions for pfp Application -->
+        <script src="js/app.js"></script>
+        <script src="js/IncomeAccountsCtrl.js"></script>
+        <script src="js/ExpenseAccountsCtrl.js"></script>
+        <script src="js/BankAccountsCtrl.js"></script>
+        <script src="js/CreditAccountsCtrl.js"></script>
+        <script src="js/SavingsGoalCtrl.js"></script>
+        <script src="js/TransactionsCtrl.js"></script>
+        <script src="js/IncomeAccountsService.js"></script>
+        <script src="js/ExpenseAccountsService.js"></script>
+
+    </body>
+</html>
