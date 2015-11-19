@@ -13,7 +13,7 @@ app.config(function($urlRouterProvider, $stateProvider) {
 	$stateProvider
 		.state('income-accounts', {
 			url: '/income-accounts',
-			templateUrl: '/templates/income-accounts.html',
+			templateUrl: 'templates/income-accounts.html',
 			controller: 'IncomeAccountsCtrl',
 			resolve: {
 				incomeAccountsRef: function(incomeAccountsService) {
