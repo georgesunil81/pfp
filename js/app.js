@@ -23,7 +23,7 @@ app.config(function($urlRouterProvider, $stateProvider) {
 		})
 		.state('expense-accounts', {
 			url: '/expense-accounts',
-			templateUrl: '/templates/expense-accounts.html',
+			templateUrl: 'templates/expense-accounts.html',
 			controller: 'ExpenseAccountsCtrl',
 			resolve: {
 				expenseAccountsRef: function(expenseAccountsService) {
@@ -33,25 +33,25 @@ app.config(function($urlRouterProvider, $stateProvider) {
 		})
 		.state('credit-accounts', {
 			url: '/credit-accounts',
-			templateUrl: '/templates/credit-accounts.html',
+			templateUrl: 'templates/credit-accounts.html',
 			controller: 'CreditAccountsCtrl',
 			
 		})
 		.state('bank-accounts', {
 			url: '/bank-accounts',
-			templateUrl: '/templates/bank-accounts.html',
+			templateUrl: 'templates/bank-accounts.html',
 			controller: 'BankAccountsCtrl',
 			
 		})
 		.state('savings-goal', {
 			url: '/savings-goal',
-			templateUrl: '/templates/savings-goal.html',
+			templateUrl: 'templates/savings-goal.html',
 			controller: 'SavingsGoalCtrl',
 			
 		})
 		.state('transactions', {
 			url: '/transactions',
-			templateUrl: '/templates/transactions.html',
+			templateUrl: 'templates/transactions.html',
 			controller: 'TransactionsCtrl',
 			
 		})
